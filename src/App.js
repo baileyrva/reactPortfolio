@@ -4,11 +4,12 @@ import Container from "react-bootstrap/Container";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import 'bootstrap-css-only/css/bootstrap.min.css';
-import 'mdbreact/dist/css/mdb.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -54,8 +55,29 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Footer>
-          </Footer>
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <HomePage
+                title={this.state.home.title}
+                subTitle={this.state.home.subTitle}
+                text={this.state.home.text}
+              />
+            )}
+          />
+          <Route
+            path="/"
+            exact
+            render={() => ()}
+          />
+          <Route
+            path="/"
+            exact
+            render={() => ()}
+          />
+
+          <Footer></Footer>
         </Container>
       </Router>
     );

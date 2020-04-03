@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { MDBIcon, MDBBtn } from "mdbreact";
+import { SocialIcon } from "react-social-icons";
 
 function footer() {
   return (
@@ -10,15 +10,10 @@ function footer() {
       <Container fluid={true}>
         <Row className="border-top justify-content-between p-3">
           <Col className="p-0 d-flex justify-content-center" sm={12}>
-            <MDBBtn className="linkedin" href="https://www.linkedin.com/in/joe-bailey-04a936196/" target="_blank" size="lg" tag="a" floating social="li">
-              <MDBIcon fab icon="linkedin" />
-            </MDBBtn>
-            <MDBBtn className="github" href="https://github.com/baileyrva" target="_blank" size="lg" tag="a" floating social="git">
-              <MDBIcon fab icon="github" background-color="white" />
-            </MDBBtn>
-            <MDBBtn className="email" href="mailto:baileyrva@gmail.com" target="_blank" size="lg" tag="a" floating social="email">
-              <MDBIcon icon="envelope" />
-            </MDBBtn>
+            <SocialIcon url="https://www.linkedin.com/in/baileyrva/" target="_blank" style={{ height: 75, width: 75 }} />
+            <SocialIcon url="https://github.com/baileyrva" target="_blank" style={{ height: 75, width: 75 }} />
+            <SocialIcon url="mailto:baileyrva@gmail.com" target="_blank" style={{ height: 75, width: 75 }} />
+
           </Col>
         </Row>
       </Container>
