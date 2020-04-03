@@ -1,6 +1,9 @@
-.linkedin {
+.linkedin, .email {
   color: whitesmoke !important;
-  background-color: navy !important;
+}
+
+.github {
+  color: black !important;
 }
 
 .App {

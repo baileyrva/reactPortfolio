@@ -11,12 +11,12 @@ function footer() {
         <Row className="border-top justify-content-between p-3">
           <Col className="p-0 d-flex justify-content-center" sm={12}>
             <MDBBtn className="linkedin" href="https://www.linkedin.com/in/joe-bailey-04a936196/" target="_blank" size="lg" tag="a" floating social="li">
-              <MDBIcon fab icon="linkedin-in" />
+              <MDBIcon fab icon="linkedin" />
             </MDBBtn>
             <MDBBtn className="github" href="https://github.com/baileyrva" target="_blank" size="lg" tag="a" floating social="git">
               <MDBIcon fab icon="github" background-color="white" />
             </MDBBtn>
-            <MDBBtn className="email" href="https://github.com/baileyrva" target="_blank" size="lg" tag="a" floating social="email">
+            <MDBBtn className="email" href="mailto:baileyrva@gmail.com" target="_blank" size="lg" tag="a" floating social="email">
               <MDBIcon icon="envelope" />
             </MDBBtn>
           </Col>
