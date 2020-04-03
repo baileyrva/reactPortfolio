@@ -10,6 +10,8 @@ import "mdbreact/dist/css/mdb.css";
 
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage.js";
+import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage"; 
 
 class App extends React.Component {
   constructor(props) {
@@ -67,14 +69,20 @@ class App extends React.Component {
             )}
           />
           <Route
-            path="/"
-            exact
-            render={() => ()}
+            path="/about"
+            render={() => (
+              <AboutPage
+                title={this.state.about.title}
+              />
+            )}
           />
           <Route
-            path="/"
-            exact
-            render={() => ()}
+            path="/contact"
+            render={() => (
+              <ContactPage
+                title={this.state.contact.title}
+              />
+            )}
           />
 
           <Footer></Footer>
