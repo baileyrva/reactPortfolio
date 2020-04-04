@@ -10,7 +10,6 @@ import "mdbreact/dist/css/mdb.css";
 
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage.js";
-import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage"; 
 
 class App extends React.Component {
@@ -21,7 +20,6 @@ class App extends React.Component {
       headerLinks: [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
-        { title: "Contact", path: "/contact" },
       ],
       home: {
         title: "Curiosity + Dedication = Growth",
@@ -30,9 +28,6 @@ class App extends React.Component {
       },
       about: {
         title: "About Me",
-      },
-      contact: {
-        title: "Let's Talk",
       },
     };
   }
@@ -50,9 +45,6 @@ class App extends React.Component {
                 </Link>
                 <Link className="nav-link" to="/about">
                   About
-                </Link>
-                <Link className="nav-link" to="/contact">
-                  Contact
                 </Link>
               </Nav>
             </Navbar.Collapse>
@@ -76,15 +68,6 @@ class App extends React.Component {
               />
             )}
           />
-          <Route
-            path="/contact"
-            render={() => (
-              <ContactPage
-                title={this.state.contact.title}
-              />
-            )}
-          />
-
           <Footer></Footer>
         </Container>
       </Router>
