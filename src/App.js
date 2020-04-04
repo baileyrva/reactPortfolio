@@ -18,7 +18,7 @@ class App extends React.Component {
     this.state = {
       title: "Joe Bailey",
       headerLinks: [
-        { title: "Home", path: "/" },
+        { title: "Projects", path: "/" },
         { title: "About", path: "/about" },
       ],
       home: {
@@ -41,7 +41,7 @@ class App extends React.Component {
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
-                  Home
+                  Projects
                 </Link>
                 <Link className="nav-link" to="/about">
                   About
